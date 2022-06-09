@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="black_style.css">
+    <title>Blackjack</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div id="initScreen">
+            <!-- title -->
+            <h1> Blackjack </h1>
+
+            <!-- information for player -->
+            <div class="information">
+                <h3> 게임 규칙 </h3>
+                <ul>
+                    <li> 카드 합이 21에 가까운 사람이 승리한다. </li>
+                    <li> 카드 합이 21이 넘어가면 패배하게 된다. </li>
+                    <li> A의 경우 기본적으로 11의 값을 가지며, 21이 넘거가게되면 1로 계산된다. </li>
+                    <li> Hit버튼 클릭시 카드를 추가로 받는다. </li>
+                    <li> 그림 카드는 모두 10의 값을 갖는다.</li>
+                    <li> stay버튼 클릭시 결과를 확인한다. </li>
+                </ul>
+
+                <p> 오늘의 운세를 시험해보세요 </p>
+            </div>
+
+            <!-- start Btn -->
+            <button id="startBtn" onclick="StartGame()"> start </button>
+        </div>
+
+        <div id="GameScreen">
+            <p> Dealer </p>
+            <img src="" alt="">
+            <img src="" alt="" >
+
+            <p> Player</p>
+            <div id="playerCards">  </div>
+
+            <div id="playingBtn">
+                <button id="hitBtn" onclick="hit()"> hit </button>
+                <button id="stayBtn" onclick="stay()"> stay </button>
+            </div>
+        </div>
+
+        <div id="loseScreen">
+            <p id="loseText"> </p>
+            <p>오늘은 조심하시는게 좋을것 같습니다</p>
+            <button class="againBtn" onclick="AgainBtn()"> Again </button>
+        </div>
+
+        <div id="winScreen">
+            <p id="winText"> </p>
+            <p> 오늘은 운이 좋군요!</p>
+            <button class="againBtn" onclick="AgainBtn()"> Again </button>
+        </div>
+
+        <div id="drawScreen">
+            <p id="drawText"> </p>
+            <p> 다시한번 해보세요!</p>
+            <button class="againBtn" onclick="AgainBtn()"> Again </button>
+        </div>
+
+    </div>
+
+    
+    <script src="black_index.js"></script>
+</body>
+
+<footer>
+    <p></p>
+</footer>
+
+</html>

@@ -1,0 +1,71 @@
+.container {
+    width: auto;
+    text-align: center;
+    font-family: serif;
+}
+
+body {
+    background-color: gray;
+}
+
+.container #initScreen h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    font-weight: 80;
+    padding-top: 2%;
+}
+
+.container .information{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .information ul{
+    text-align: left;
+    padding-left: 40%;
+}
+.container .information ul li{
+    margin-top: 2%;
+}
+
+.container .information p{
+    padding-top: 2%;
+}
+
+#initScreen #startBtn{
+    font-size: 24px;
+    border-radius: 4px;
+}
+#GameScreen p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    font-weight: 70;
+    padding-top: 1%;
+}
+
+#hitBtn, #stayBtn, .againBtn{
+    margin-top: 3%;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+#GameScreen {
+    display: none;
+}
+
+#loseScreen{
+    display: none;
+}
+
+#winScreen{
+    display: none;
+}
+
+#drawScreen{
+    display: none;
+}
+
+#loseScreen, #winScreen, #drawScreen p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 620;
+}
